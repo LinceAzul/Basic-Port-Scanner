@@ -48,7 +48,7 @@ except socket.gaierror: # GAI error happens when the host could not be resolved
 	print("Hostname could not be resolved.")
 	sys.exit()
 	
-except socket.error:
+except socket.error: # Error control
 	print("Could not connect to the server.")
 	sys.exit()
 	
